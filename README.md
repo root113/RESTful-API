@@ -1,5 +1,5 @@
 <h1>RESTful API</h1>
-<p>A simple API created for practice purposes to test GET, POST and DELETE methods.</p>
+<p>A simple API created for practice purposes to test GET, POST, PATCH (UPDATE) and DELETE methods.</p>
 
 <h3>Required Softwares & Packages</h3>
 <ul>
