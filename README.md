@@ -1,5 +1,5 @@
 <h1>RESTful API</h1>
-<p>A simple API created for practice purposes to test GET, POST and DELETE methods.</p>
+<p>A simple API created for practice purposes to test GET, POST, PATCH and DELETE methods.</p>
 
 <h3>Required Softwares & Packages</h3>
 <ul>
@@ -33,3 +33,5 @@
   sudo npm install axios -g
   sudo npm install dotenv -g
 </pre>
+<h3>Possible issues you may encounter</h3>
+<p>Please refer to <a href="https://github.com/root113/RESTful-API/issues/1">this page</a></p>
