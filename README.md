@@ -33,3 +33,5 @@
   sudo npm install axios -g
   sudo npm install dotenv -g
 </pre>
+<h3>Issues</h3>
+<p>For possible issues you may encounter, refer to <a href="https://github.com/root113/RESTful-API/issues?q=is%3Aissue+is%3Aclosed">this page.</a></p>
