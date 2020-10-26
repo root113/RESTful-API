@@ -22,8 +22,10 @@ app.listen(3000);
   !security reasons since it contains
   !username and password
 */
-mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () => {
-  console.log(`Connection to the cluster is successful!`);
-});
-
-mongoose.set(`useUnifiedTopology`, true);
+mongoose.connect(
+  process.env.DB_CONNECTION,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  () => {
+    console.log(`Connection to the cluster is successful!`);
+  }
+);
