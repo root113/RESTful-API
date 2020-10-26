@@ -2,6 +2,7 @@ const express = require(`express`);
 const app = express();
 const mongoose = require(`mongoose`);
 const bodyParser = require(`body-parser`);
+require(`dotenv/config`);
 
 app.use(bodyParser.json());
 //*app.use(bodyParser.urlencoded({ extended: false}));
@@ -15,6 +16,14 @@ app.use(`/posts`, postsRoute);
 app.listen(3000);
 
 //?Connect to database
-mongoose.connect(/*!Your db connection script */, { useNewUrlParser: true }, () => {
-    console.log(`Connection to the cluster is successful!`);
+/*
+  !Connection string is in .env file
+  !which is not pushed to github for
+  !security reasons since it contains
+  !username and password
+*/
+mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () => {
+  console.log(`Connection to the cluster is successful!`);
 });
+
+mongoose.set(`useUnifiedTopology`, true);
